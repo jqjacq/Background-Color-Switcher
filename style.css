@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav {
+    text-align: center;
+    font-size: 50px;
+    background-color: lightgrey;
+}
+.bgcontainer, .buttoncontainer, .colorcontainer, .allbuttons{
+    display: flex;
+    justify-content: center;
+}
+.bg {
+    margin-top: 25px;
+    align-items: center;
+    background-color: rgb(43, 43, 43);
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 5px;
+}
+.colorsbutton {
+    margin: 10px;
+    padding: 5px 30px;
+    width: 100px;
+    border-radius: 10px;
+}
+.colorsbutton, #colorbutton {
+    padding: 10px 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 2px 1px 1px;
+}
+.colorsbutton:hover, #colorbutton:hover {
+    background-color: rgb(65, 64, 64);
+    color: white;
+    cursor: pointer;
+}
+.colorsbutton:active, #colorbutton:active {
+    transform: translateY(4px);
+    cursor: pointer;
+}
+#colorchange {
+    text-align: center;
+}
+.allbuttons {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    background-color: lightgray;
+}
+.allbuttons:hover{
+    background-color: black;
+    color: white;
+    transition: all 1s ease-in-out;
+}
+.allbuttons:hover {
+    font-size: 30px;
+}
+#rainbow {
+    width: 100%;
+    height: 400px;
+}
+@media only screen and (max-width: 950px) {
+    #rainbow {
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #rainbow {
+        height: 100%;
+    }
+    nav {
+        font-size: 30px;
+    }
+}

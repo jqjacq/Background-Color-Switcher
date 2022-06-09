@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body class="body">
+    <img id="rainbow" src="img/colorscheme1.jpg">
+    <!--https://unsplash.com/photos/3k9PGKWt7ik-->
+    <nav> COLOR SWITCHER: Choose your color </nav>
+
+    <div class="bgcontainer">
+        <div class="bg">
+         Background Color:
+            <div id="colorchange"> White </div>
+        </div>
+    </div>
+    
+     <div class="colorcontainer">
+        <button class="colorsbutton" onclick="changeToRed()" id="Red"> Red</button>
+        <button class="colorsbutton" onclick="changeToOrange()" id="Orange"> Orange </button>
+        <button class="colorsbutton" onclick="changeToYellow()" id="Yellow"> Yellow</button>
+    </div>
+    <div class="colorcontainer">
+        <button class="colorsbutton" onclick="changeToGreen()" id="Green"> Green</button>
+        <button class="colorsbutton" onclick="changeToBlue()" id="Blue"> Blue</button>
+        <button class="colorsbutton" onclick="changeToPurple()" id="Purple"> Purple</button>
+    </div>
+     <a class="allbuttons" id= "randomcolor" href="index.html"> 
+         Randomize Colors</a><br>
+     <a class="allbuttons" id="hexcolor" href="hex.html"> 
+            HEX Colors </a>
+    <script src="color.js"></script>
+</body>
+</html>
